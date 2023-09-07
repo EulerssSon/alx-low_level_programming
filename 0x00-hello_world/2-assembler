@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -echo "$(echo $k |cut -d '.' -f1).s"
+gcc -S $CFILE 
