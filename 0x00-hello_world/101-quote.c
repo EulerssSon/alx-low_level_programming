@@ -10,9 +10,11 @@
  */
 int main(void)
 {
-	const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	const char *message_part1 = "and that piece of art is useful\" - ";
+	const char *message_part2 = "Dora Korpar, 2015-10-19\n";
 
-	write(2, message, strlen(message));
+	write(2, message_part1, strlen(message_part1));
+	write(2, message_part2, strlen(message_part2));
 
 	return (1);
 }
