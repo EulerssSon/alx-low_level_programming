@@ -1,2 +1,2 @@
 #!/bin/bash
-a=${CFILE%.*} && gcc -c $CFILE ${a}.o
+gcc -c $CFILE -o `echo $CFILE | cut -d '.' -f 1 | `.o
