@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE -o  `echo $CFLE | cut -d '.' -f 1`.s
+gcc -S -masm=intel $CFILE 
