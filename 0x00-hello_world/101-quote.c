@@ -2,15 +2,18 @@
 #include <string.h>
 
 /**
- * main -n main function
+ * main - Entry point
  *
- * Return: 1 for error
+ * Description: Prints a message to the standard error stream
  *
- * Description: write to the file error
+ * Return: Always 1 (error)
  */
-int main()
+int main(void)
 {
-	const char* message ="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(2,message,strlen(message));
+	const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(2, message, strlen(message));
+
 	return (1);
 }
+
