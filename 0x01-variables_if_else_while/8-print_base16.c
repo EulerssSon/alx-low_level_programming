@@ -15,7 +15,7 @@ while (alphabets <= 57)
 putchar(alphabets);
 alphabets++;
 }
-while(nums <= 'f')
+while (nums <= 'f')
 {
 putchar(nums++);
 }
