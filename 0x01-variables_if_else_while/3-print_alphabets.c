@@ -10,10 +10,9 @@ int main(void)
 {
 char alphabets = 'a';
 int i = 65;
-while (alphabets <= 'Z')
+while (alphabets <= 'z')
 {
-
-printf("%c", putchar(alphabets));
+putchar(alphabets);
 alphabets++;
 }
 for (; i <= 90; i++)
