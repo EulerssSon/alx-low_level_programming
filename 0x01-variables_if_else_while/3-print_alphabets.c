@@ -9,12 +9,13 @@
 int main(void)
 {
 char alphabets = 'a';
+int i = 65;
 while (alphabets <= 'z')
 {
 printf("%c", alphabets);
 alphabets++;
 }
-for (int i = 65; i <= 95; i++)
+for (; i <= 95; i++)
 {
 printf("%c", i);
 }
