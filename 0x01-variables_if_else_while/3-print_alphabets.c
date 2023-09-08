@@ -19,5 +19,6 @@ for (; i <= 90; i++)
 {
 putchar(i);
 }
+putchar(10);
 return (0);
 }
