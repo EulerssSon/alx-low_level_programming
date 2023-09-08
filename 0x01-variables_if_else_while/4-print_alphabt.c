@@ -18,5 +18,6 @@ continue;
 }
 putchar(alphabets++);
 }
+putchar(10);
 return (0);
 }
