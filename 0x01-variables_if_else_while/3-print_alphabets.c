@@ -14,5 +14,9 @@ while (alphabets <= 'z')
 printf("%c", alphabets);
 alphabets++;
 }
+for (int i = 65; i <= 95; i++)
+{
+printf("%c", i);
+}
 return (0);
 }
