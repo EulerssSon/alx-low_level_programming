@@ -10,14 +10,15 @@ int main(void)
 {
 char alphabets = 'a';
 int i = 65;
-while (alphabets <= 'z')
+while (alphabets <= 'Z')
 {
-printf("%c", alphabets);
+
+printf("%c", putchar(alphabets));
 alphabets++;
 }
-for (; i <= 95; i++)
+for (; i <= 90; i++)
 {
-printf("%c", i);
+putchar(i);
 }
 return (0);
 }
