@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-    int x = 48;
+int x = 48;
 
 while (x <= 57)
 {
@@ -23,7 +23,7 @@ if (x == y)
 y++;
 continue;
 }
-if ((((char)x * 10 + (char)y) - ((char)y * 10 + (char)x)) / 9 > 0)
+if ((((char)x * 10 + (char)y) -((char)y * 10 + (char)x)) / 9 > 0)
 {
 y++;
 continue;
