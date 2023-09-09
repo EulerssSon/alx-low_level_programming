@@ -34,12 +34,15 @@ putchar(y + 48);
 putchar(' ');
 putchar(z + 48);
 putchar(e + 48);
-if (!(x == 9 && y == 8 && z == 9 && e == 9))
+if(!(x ==9 && y ==8 && z ==9 && e ==9))
+{
 putchar(',');
 putchar(' ');
 }
 }
 }
 }
-return (0);
 }
+putchar(10);
+return (0);
+}}
