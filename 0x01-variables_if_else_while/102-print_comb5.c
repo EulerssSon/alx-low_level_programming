@@ -28,10 +28,6 @@ putchar(' ');
 putchar(48 + z);
 putchar (48 + e);
 putchar(',');
-//if (!(x == 9 && y == 8 && z == 9 && e ==9))
-//{
-//putchar(',');
-//}
 }
 }
 }
