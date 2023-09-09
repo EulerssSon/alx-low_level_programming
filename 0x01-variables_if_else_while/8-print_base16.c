@@ -9,15 +9,15 @@
 int main(void)
 {
 int alphabets = 48;
+char nums = 'a';
 while (alphabets <= 57)
 {
 putchar(alphabets);
-if (alphabets != 57)
-{
-putchar(',');
-putchar(' ');
-}
 alphabets++;
+}
+while (nums <= 'f')
+{
+putchar(nums++);
 }
 putchar(10);
 return (0);
