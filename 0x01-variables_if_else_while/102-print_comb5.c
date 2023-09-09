@@ -25,10 +25,10 @@ if (!(x == 9 && y == 8))
 {
 putchar(x + 48);
 putchar(y + 48);
-putchar(',');
+putchar(' ');
 putchar(z + 48);
 putchar(e + 48);
-putchar(' ');
+putchar(',');
 }
 }
 }
