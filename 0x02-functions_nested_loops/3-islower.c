@@ -2,7 +2,7 @@
  /**
   * _islower - islower function
   * @c: c is the paramter
-  * Descriptioin: read desciripl;j;
+  * Descriptioin: read descirip
   * Return: 1 on success, 0 on failure
   * Description: find lower or not
   */
