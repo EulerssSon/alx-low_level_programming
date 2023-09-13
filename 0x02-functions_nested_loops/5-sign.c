@@ -2,7 +2,7 @@
 
 /**
  * print_sign - take an int and give an int
- * @n - first opernad to be ckecked
+ * @n: first opernad to be ckecked
  *
  * Description: num + word if n >0 0 0 if 0 -1 - n<0
  * Return: 1 , 0 , -1 , + , 0 ,-
