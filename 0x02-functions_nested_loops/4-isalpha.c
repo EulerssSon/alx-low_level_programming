@@ -1,17 +1,21 @@
- #include "main.h"
+#include "main.h"
 
 /**
- * _islower - an int function takes an int as an arg
- * @c: a char to be checked
+ * _isalpha - Checks if a character is an alphabetic character.
  *
- * Description: chech if the letter is small or captial
- * Return: 1 is true 0 on false
+ * @c: The character to be checked.
+ *
+ * Description: This function checks whether the
+ *              either lowercase or uppercase. It uthe character
+ *              falls within the range of lowercase or uppercase alphabets.
+ *
+ * Return: 1 if the character is an alphabetic character, otherwise 0.
  */
-
 int _isalpha(int c)
 {
-if ((c >= 97 && c <= 122) || (c >= 65 && c <= 132))
-return (1);
+if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+	return (1);
 else
-return (0);
+	return (0);
 }
+
