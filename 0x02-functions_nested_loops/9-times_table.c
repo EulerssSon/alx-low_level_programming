@@ -19,8 +19,9 @@ void times_table(void)
 		{
 			multiplication = i * j;
 
-			if (j != 0)
+			if ((multiplication / 10) == 0)
 			{
+				if (j != 0)
 				_putchar(',');
 				_putchar(multiplication + '0');
 				if (j == 9)
