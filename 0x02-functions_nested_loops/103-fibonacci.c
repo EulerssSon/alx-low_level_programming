@@ -10,7 +10,7 @@ int main(void)
 {
 	long int f1 = 1;
 	long int f2 = 2;
-	long long sum = 2;
+	long int sum = 2;
 	long int fi;
 
 	while (sum <= 4000000)
@@ -21,7 +21,7 @@ int main(void)
 		f1 = f2;
 		f2 = fi;
 	}
-	printf("%lld\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
 
