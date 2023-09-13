@@ -1,22 +1,30 @@
 #include "main.h"
 
 /**
- * jack_bauer - print every single combination inna time from 0000 2359
+ * jack_bauer - pr every single combination inna time from 0000 2359
  *
  * Return: the combination of the time
  *
- * Description: 4 nested loops to print the time
+ * Description: 4 nested loops to pr the time
  */
 
 void jack_bauer(void)
 {
-	for (int i = 48; i <= 50; i++)
+	int i;
+
+	for (i = 48; i <= 50; i++)
 	{
-		for (int j = 48; j <= 57; j++)
+		int j;
+
+		for (j = 48; j <= 57; j++)
 		{
-			for (int k = 48; k <= 53; k++)
+			int k;
+
+			for (k = 48; k <= 53; k++)
 			{
-				for (int z = 48; z <= 57; z++)
+				int z;
+
+				for (z = 48; z <= 57; z++)
 				{
 					_putchar(i);
 					_putchar(j);
