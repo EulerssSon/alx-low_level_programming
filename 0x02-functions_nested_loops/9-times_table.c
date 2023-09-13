@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "main.h" 
+
 /**
  * times_table - print time table
  * Return: null just printing
