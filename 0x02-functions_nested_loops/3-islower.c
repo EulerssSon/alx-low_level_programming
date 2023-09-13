@@ -2,9 +2,8 @@
  /**
   * _islower - islower function
   * @c: c is the paramter
-  * Descriptioin: read descirip
   * Return: 1 on success, 0 on failure
-  * Description: find lower or not
+  * Descriptioin: read descirip
   */
 int _islower(int c)
 {
