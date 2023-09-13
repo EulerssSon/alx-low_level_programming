@@ -3,20 +3,30 @@
 /**
  * main - main function
  * Return: 0 on sucess
- * Description: sum all who are divisble by 3 or 5 under 1024
+ * Description: print the first 50 fobi's numbers starting fomr 1 2
  */
 
 int main(void)
 {
-	int sum = 0;
-	int i;
+	long int f1 = 1;
+	long int f2 = 2;
+	long int i = 3;
+	long int fi;
 
-	for (i = 1; i < 1024; i++)
+	printf("%ld, %ld, ", f1, f2);
+	for (; i <= 50; i++)
 	{
-	if (i % 3 == 0 || i % 5 == 0)
-	{
-		sum += 1;
-	}
+		fi = f1 + f2;
+		if (i != 50)
+		{
+			printf("%ld, ", fi);
+			f1 = f2;
+			f2 = fi;
+		}
+		else
+		{
+			printf("%ld\n", fi);
+		}
 	}
 	return (0);
 }
