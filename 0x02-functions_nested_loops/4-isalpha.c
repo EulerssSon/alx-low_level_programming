@@ -1,4 +1,5 @@
  #include "main.h"
+
 /**
  * _islower - an int function takes an int as an arg
  * @c: a char to be checked
