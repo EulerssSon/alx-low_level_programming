@@ -1,21 +1,17 @@
- #include "main.h"
+# include "main.h"
+/**
+ * main - main fundtion
+ * Return: 0 on sucess
+ * Description: print_putchar
+ */
+int main(void)
+char str[] = "_putchar";
+int i;
 
- /**
-  * main - main function
-  *
-  * Return: 0 on success, 1 on failure
-  *
-  * Description: print _putchar
-  */
- int main(void)
- {
- char str[] = "_putchar";
- int i;
-
- for (i = 0; i < 8; i++)
- {
- putchar(str[i]);
- }
- _putchar('\n');
- return (0);
- }
+for (i = 0; i < 8; i++)
+{
+	_putchar(str[i]);
+}
+putchar('\n');
+return (0);
+}
