@@ -4,7 +4,7 @@
  * _abs - function to return absolute value
  * @n: first opernad n  the number to be checked
  *
- * Description: if number positive print 
+ * Description: if number positive
  * if nev multiple by -1
  * Return: n
  * if positve else return -1 * n
