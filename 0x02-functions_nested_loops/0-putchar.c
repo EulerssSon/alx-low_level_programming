@@ -1,10 +1,12 @@
-# include "main.h"
+#include "main.h"
 /**
  * main - main fundtion
  * Return: 0 on sucess
  * Description: print_putchar
  */
+
 int main(void)
+{
 char str[] = "_putchar";
 int i;
 
