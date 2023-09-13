@@ -1,35 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_to_98 - a function to print a number from or to 98 included
- *
- * @n: the number to print to or from relativerly to 98
- *
- * Return: Null void prints only
- *
- * Description: print number from or to the 98
+ * main - main function
+ * Return: 0 on sucess
+ * Description: sum all who are divisble by 3 or 5 under 1024
  */
-void print_to_98(int n)
+
+int main(void)
 {
-	if (n == 98)
+	int sum = 0;
+	int i;
+
+	for (i = 1; i < 1024; i++)
 	{
-		printf("%d\n", 98);
-	}
-	else if (n > 98)
+	if (i % 3 == 0 || i % 5 == 0)
 	{
-		while (n > 98)
-		{
-			printf("%d, ", n--);
-		}
-		printf("%d", 98);
-	}
-	else
-	{
-		while (n < 98)
-		{
-			printf("%d, ", n++);
-		}
-		printf("%d", 98);
+		sum += 1;
 	}
 	}
+	return (0);
+}
 
