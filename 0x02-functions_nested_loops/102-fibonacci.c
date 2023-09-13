@@ -10,24 +10,18 @@ int main(void)
 {
 	long int f1 = 1;
 	long int f2 = 2;
-	long int i = 3;
+	long long sum = 2;
 	long int fi;
 
-	printf("%ld, %ld, ", f1, f2);
-	for (; i <= 50; i++)
+	while (sum <= 4000000)
 	{
 		fi = f1 + f2;
-		if (i != 50)
-		{
-			printf("%ld, ", fi);
-			f1 = f2;
-			f2 = fi;
-		}
-		else
-		{
-			printf("%ld\n", fi);
-		}
+		if (fi % 2 == 0)
+			sum += fi;
+		f1 = f2;
+		f2 = fi;
 	}
+	printf("%lld\n", sum);
 	return (0);
 }
 
