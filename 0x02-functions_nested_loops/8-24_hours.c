@@ -1,4 +1,3 @@
-#include "main.h"
 
 /**
  * jack_bauer - pr every single combination inna time from 0000 2359
