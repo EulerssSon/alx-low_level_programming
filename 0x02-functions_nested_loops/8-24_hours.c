@@ -26,7 +26,7 @@ void jack_bauer(void)
 			sec_dig = 57;
 		}
 
-		for (j = 48; j <= 51; j++)
+		for (j = 48; j <= sec_dig; j++)
 		{
 			int k;
 
