@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_most_numbers - function to print_numbers expcet 2 4
+ * print_most_numbers - function to print_numbers till 14
  *
  * Return: Null void function
  *
- * Description: print_numbers form 0 to 9 expcet 2 4
+ * Description: print_numbers form 0 to 14
  */
 void print_most_numbers(void)
 {
@@ -12,10 +12,15 @@ void print_most_numbers(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		if(i == 50 || i == 52)
-			continue;
 		_putchar(i);
+	}
+
+	int j = 1;
+
+	for (; j <= 4; j++)
+	{
+		_putchar(49);
+		_putchar(j + '0');
 	}
 	_putchar(10);
 }
-
