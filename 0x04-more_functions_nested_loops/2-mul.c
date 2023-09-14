@@ -1,12 +1,12 @@
 #include "main.h"
-
 /**
- * _mul - function multi 2 ints 
- * @a: first opeant the num to be checked
- * @b: sec operand the multiplier
-
- * Return: Num Multiplied
- * Description: integers mulitplication 
+ * mul - function to * 2 ints
+ *
+ * @a: fisrt num
+ * @b: second num
+ *
+ * Return: the multiplied num
+ * Description: take 2 ints and return one int is there multiplication
  */
 
 int mul(int a, int b)
