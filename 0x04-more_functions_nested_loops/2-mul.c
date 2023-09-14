@@ -1,17 +1,15 @@
 #include "main.h"
 
 /**
- * _isdigit - function to check if the letter is digit or not
- * @c: first opeant the char to be checked
- *
- * Return: 1 or 0
- * Description: 1 means sucess the char is a num 0 is the else one
+ * _mul - function multi 2 ints 
+ * @a: first opeant the num to be checked
+ * @b: sec operand the multiplier
+
+ * Return: Num Multiplied
+ * Description: integers mulitplication 
  */
 
-int _isdigit(int c)
+int mul(int a, int b)
 {
-    if (c >= 48 && c <= 57)
-        return (1);
-    return (0);
+	Return (a * b);
 }
-
