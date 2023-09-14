@@ -1,12 +1,14 @@
 #include "main.h"
+
 /**
- * print_most_numbers - function to print_numbers till 14
+ * more_numbers - function to print_numbers till 14  times
  *
  * Return: Null void function
  *
- * Description: print_numbers form 0 to 14
+ * Description: print_numbers form 0 to 14 x 10
  */
-void print_most_numbers(void)
+
+void more_numbers(void)
 {
 	int k;
 
@@ -19,7 +21,7 @@ void print_most_numbers(void)
 			_putchar(i);
 		}
 
-		int j = 1;
+		int j = 0;
 
 		for (; j <= 4; j++)
 		{
