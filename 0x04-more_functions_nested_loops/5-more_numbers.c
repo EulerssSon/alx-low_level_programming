@@ -8,19 +8,25 @@
  */
 void print_most_numbers(void)
 {
-	int i;
+	int k;
 
-	for (i = 48; i <= 57; i++)
+	for (k = 1; k <= 10; k++)
 	{
-		_putchar(i);
-	}
+		int i;
 
-	int j = 1;
+		for (i = 48; i <= 57; i++)
+		{
+			_putchar(i);
+		}
 
-	for (; j <= 4; j++)
-	{
-		_putchar(49);
-		_putchar(j + '0');
+		int j = 1;
+
+		for (; j <= 4; j++)
+		{
+			_putchar(49);
+			_putchar(j + '0');
+		}
+		_putchar(10);
 	}
-	_putchar(10);
 }
+
