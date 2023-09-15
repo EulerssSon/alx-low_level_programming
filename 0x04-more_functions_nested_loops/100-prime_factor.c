@@ -10,30 +10,30 @@
 
 int main(void)
 {
-	long int n;
+	long int num;
 	long int max;
 	long int i;
 
-	n = 612852475143;
+	num = 612852475143;
 	max = -1;
 
-	while (n % 2 == 0)
+	while (num % 2 == 0)
 	{
 		max = 2;
-		n /= 2;
+		num /= 2;
 	}
 
-	for (i = 3; i <= sqrt(n); i = i + 2)
+	for (i = 3; i <= sqrt(num); i = i + 2)
 	{
 		while (n % i == 0)
 		{
 			max = i;
-			n = n / i;
+			num /= i;
 		}
 	}
 
-	if (n > 2)
-		max = n;
+	if (num > 2)
+		max = num;
 
 	printf("%ld\n", max);
 
