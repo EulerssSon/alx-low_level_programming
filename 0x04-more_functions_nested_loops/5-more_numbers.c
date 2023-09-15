@@ -1,27 +1,24 @@
 #include "main.h"
+
 /**
- * more_numbers - function to print num
- * Return: null
- * Description: we all hate betty + checket
+ * more_numbers - print more numbers
+ * Return: null void
+ * Description: print 10 times from 0 - 14
  */
 
 void more_numbers(void)
 {
-	int k;
-	int j;
-	int i;
+	int i, j;
 
-	for (k = 1; k <= 10; k++)
+	for (i = 1; i <= 10; i++)
 	{
-		for (i = 48; i <= 57; i++)
+		for (j = 0; j <= 14; j++)
 		{
-			_putchar(i);
+			if (j >= 10)
+				_putchar(49);
+			_putchar (j % 10 + '0');
 		}
-		for (j = 0; j <= 4; j++)
-		{
-			_putchar(49);
-			_putchar(j + '0');
-		}
+		_putchar(10);
 	}
 }
 
