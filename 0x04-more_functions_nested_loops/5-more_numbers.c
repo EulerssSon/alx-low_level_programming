@@ -1,13 +1,10 @@
 #include "main.h"
 
- /**
- * more_numbers - function to print_numbers till 14  times
- *
- * Return: Null void function
- *
- * Description: print_numbers form 0 to 14 x 10
- */
-
+/**
+  * more_numbers - function
+  * Return: null
+  * Description: i hate betty
+  */
 void more_numbers(void)
 {
 int k;
