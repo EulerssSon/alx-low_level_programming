@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 int power(int base, int exp);
 /**
