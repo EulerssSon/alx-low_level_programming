@@ -6,17 +6,18 @@
  * Return: Null void function
  * Description: print number of any didgits using chars
  */
+
 void print_number(int n)
 {
 	unsigned int num1;
 
 	if (n < 0)
 	{
-		num1 = -n;
+		num1 = -1 * n;
 		_putchar('-');
 	} else
 	{
-		n1 = n;
+		num1 = n;
 	}
 
 	if (num1 / 10)
