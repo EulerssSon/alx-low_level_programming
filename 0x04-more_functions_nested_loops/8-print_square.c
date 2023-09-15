@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_square - print sqaure of *
@@ -21,10 +20,10 @@ void print_square(int size)
 			{
 				_putchar('#');
 			}
-			putchar(10);
+			_putchar(10);
 		}
 	}
 	else
-		putchar(10);
+		_putchar(10);
 }
 
