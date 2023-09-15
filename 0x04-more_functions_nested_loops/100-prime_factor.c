@@ -16,6 +16,7 @@ int main(void)
 	unsigned long int Larg_Prime_Factor = 0;
 	int TheBoolean;
 
+	scanf("%lu", n);
 	for (i = 2; i <= n; i++)
 	{
 		if ((n % i) == 0)
