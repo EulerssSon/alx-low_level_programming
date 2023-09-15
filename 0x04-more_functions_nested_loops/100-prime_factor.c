@@ -19,7 +19,7 @@ int main(void)
 
 	while (num % 2 == 0)
 	{
-		Larget_Prime = 2;
+		Largest_Prime = 2;
 		num /= 2;
 	}
 
@@ -27,13 +27,13 @@ int main(void)
 	{
 		while (num % i == 0)
 		{
-			Larget_Prime = i;
+			Largest_Prime = i;
 			num /=  i;
 		}
 	}
 
 	if (num > 2)
-		Larget_Prime = num;
+		Largest_Prime = num;
 
 	printf("%ld\n", Largest_Prime);
 
