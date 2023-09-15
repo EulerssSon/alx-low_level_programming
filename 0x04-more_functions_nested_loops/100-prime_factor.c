@@ -1,4 +1,4 @@
-#include <tdio.h>
+#include <stdio.h>
 #include <math.h>
 /**
  * main - main function
