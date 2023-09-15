@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	unsigned long int n = 0;
+	unsigned long int n = 612852475143;
 	unsigned long int i;
 	unsigned long int j;
 	unsigned long int Larg_Prime_Factor = 0;
