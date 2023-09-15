@@ -2,7 +2,9 @@
 
 /**
  * main - main function
+
  * Return: 0 on sucess 1 on failure
+
  * Description: print the largest factore of a num
  */
 
