@@ -12,18 +12,18 @@ int main(void)
 {
 	long int num;
 	long int i;
-	long int Larget_Prime;
+	long int Largest_Prime;
 
 	num = 612852475143;
-	max = -1;
+	Largest_Prime = -1;
 
-	while (n % 2 == 0)
+	while (num % 2 == 0)
 	{
 		Larget_Prime = 2;
 		num /= 2;
 	}
 
-	for (i = 3; i <= qrt(n); i = i + 2)
+	for (i = 3; i <= qrt(num); i = i + 2)
 	{
 		while (num % i == 0)
 		{
@@ -35,7 +35,7 @@ int main(void)
 	if (num > 2)
 		Larget_Prime = num;
 
-	printf("%ld\n", Larget_Prime);
+	printf("%ld\n", Largest_Prime);
 
 	return (0);
 }
