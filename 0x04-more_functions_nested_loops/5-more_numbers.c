@@ -1,6 +1,6 @@
 #include "main.h"
 
-/**
+ /**
  * more_numbers - function to print_numbers till 14  times
  *
  * Return: Null void function
@@ -10,25 +10,20 @@
 
 void more_numbers(void)
 {
-	int k;
-
-	for (k = 1; k <= 10; k++)
-	{
-		int i;
-
-		for (i = 48; i <= 57; i++)
-		{
-			_putchar(i);
-		}
-
-		int j = 0;
-
-		for (; j <= 4; j++)
-		{
-			_putchar(49);
-			_putchar(j + '0');
-		}
-		_putchar(10);
-	}
+int k;
+int j;
+for (k = 1; k <= 10; k++)
+{
+int i;
+for (i = 48; i <= 57; i++)
+{
+_putchar(i);
 }
-
+for (j = 0; j <= 4; j++)
+{
+_putchar(49);
+_putchar(j + '0');
+}
+_putchar(10);
+}
+}
