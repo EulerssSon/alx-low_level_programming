@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#define yea year
 /**
 * print_remaining_days - takes a date and prints how many days are
 * left in the year, taking leap years into account
@@ -12,7 +11,7 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	if ((yea % 100 == 0 && yea % 400 == 0) || (yea % 100 != 0 && yea % 4 == 0))
+	if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0)
 	{
 		if (month >= 2 && day >= 60)
 		{
