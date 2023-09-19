@@ -27,7 +27,5 @@ int _atoi(char *s)
 		n = n * 10 + (*s - '0');
 		s++;
 	}
-	if (*s == NULL)
-		return (NULL);
 	return (n * sign);
 }
