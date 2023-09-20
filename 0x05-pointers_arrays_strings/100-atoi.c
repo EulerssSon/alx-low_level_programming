@@ -10,18 +10,20 @@
 int _atoi(char *s)
 {
 	unsigned int n = 0;
-	int  sign = 1;
+	int  sign = 0;
 
-	while (!(*s >= '0' && *s <= '9'))
+	while (!(*s >= '0' && *s <= '9') && *s != '\0')
 	{
-		s++; /*escaping all non numbers*/
-	}
-	s--; /*going back to check the sigh*/
 	if (*s == '-')
 	{
-		sign = -1;
+		sign++;
 	}
-	s++; /*going back to the first number*/
+	s++;
+	}
+	if (sign % 2 == 0)
+		sign = 1;
+	else
+		sign = -1;
 	while (*s >= '0' && *s <= '9')
 	{
 		n = n * 10 + (*s - '0');
