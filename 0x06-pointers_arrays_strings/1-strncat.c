@@ -13,7 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
-	if (dest == NULL || src == NULL || n == 0)
+	if (dest == NULL || src == NULL || n <= 0)
 	{
 		return (dest);
 	}
