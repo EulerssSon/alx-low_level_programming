@@ -8,27 +8,19 @@
  */
 void print_number(int n)
 {
-	unsigned int rev = 0;
-	unsigned int num = n;
+	unsigned int num;
 
-	if (n == 0)
-	{
-		_putchar('0');
-	}
 	if (n < 0)
 	{
 		_putchar('-');
-		num = -1 * num;
+		num = -n;
 	}
-	while (num > 0)
-	{
-		rev = rev * 10 + num % 10;
-		num /= 10;
-	}
-	while (rev > 0)
-	{
-		_putchar(rev % 10 + '0');
-		rev /= 10;
-	}
+	else
+		num = n;
+
+	if (num / 10)
+		print_number(num / 10);
+
+	_putchar(num % 10 + '0');
 }
 
