@@ -9,20 +9,14 @@
 
 char *leet(char *s)
 {
-	while (*s != '\0')
-	{
-		if (*s == 'a' || *s == 'A')
-			*s = '4';
-		else if (*s == 'e' || *s == 'E')
-			*s = '3';
-		else if (*s == 'o' || *s == 'O')
-			*s = '0';
-		else if (*s == 't' || *s == 'T')
-			*s = '7';
-		else if (*s == 'l' || *s == 'L')
-			*s = '1';
-		s++;
-	}
+	int i, j;
+	char *letters = "aAeEoOtTlL";
+	char *numbers = "4433007711";
+
+	for (i = 0; s[i] != '\0'; i++)
+		for (j = 0; letters[j] != '\0'; j++)
+			if (s[i] == letters[j])
+				s[i] = numbers[j];
 	return (s);
 }
 
