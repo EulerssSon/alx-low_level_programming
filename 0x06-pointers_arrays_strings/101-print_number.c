@@ -9,6 +9,7 @@
 void print_number(int n)
 {
 	unsigned int rev = 0;
+	unsigned int num = n;
 
 	if (n == 0)
 	{
@@ -17,12 +18,12 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		num = -1 * num;
 	}
-	while (n > 0)
+	while (num > 0)
 	{
-		rev = rev * 10 + n % 10;
-		n /= 10;
+		rev = rev * 10 + num % 10;
+		num /= 10;
 	}
 	while (rev > 0)
 	{
