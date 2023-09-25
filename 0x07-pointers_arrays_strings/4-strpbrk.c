@@ -7,8 +7,7 @@
  * Return: pointer to the byte in s that matches one of the bytes in accept,
  * Description: locates the first occurrence in the string s of any of the
  */
-
-cahr *_strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
 
