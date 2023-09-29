@@ -1,39 +1,36 @@
 #include "main.h"
 
 /**
- * rec_is_palindrome - checks if a string is a palindrome
+ * check_palindrome - checks if a string is a palindrome
  * @s: string to check
- * @left: leftmost index
- * @right: rightmost index
+ * @len: length of string
  *
  * Return: 1 if palindrome, 0 otherwise
  */
 
-int rec_is_palindrome(char *s, int left, int right)
+int check_palindrome(char *s, int len)
 {
-	if (left >= right)
+	if (len <= 1)
 		return (1);
-	else if (s[left] == s[right])
-		return (rec_is_palindrome(s, left + 1, right - 1));
+	else if (*s == *(s + len - 1))
+		return (check_palindrome(s + 1, len - 2));
 	else
 		return (0);
 }
 
 /**
- * is_palindrome - checks if a string is a palindrome
+ * is_palindrome - function to ckeck
  * @s: string to check
- *
  * Return: 1 if palindrome, 0 otherwise
  */
 
 int is_palindrome(char *s)
 {
-	int length;
+	int len = 0;
 
-	if (*s == '\0')
-		return (1);
-	for (length = 0; s[length] != '\0'; length++)
-		;
-	return (rec_is_palindrome(s, 0, length - 1));
+	while (*(s + len))
+		len++;
+
+	return (check_palindrome(s, len));
 }
 
