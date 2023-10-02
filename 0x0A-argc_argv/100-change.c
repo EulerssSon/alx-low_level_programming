@@ -28,7 +28,7 @@ int cents(int num)
  * main - prints the minimum number of coins to make change
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: 0
+ * Return: 0 or 1
  */
 
 int main(int argc, char *argv[])
