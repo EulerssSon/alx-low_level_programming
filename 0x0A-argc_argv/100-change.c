@@ -1,51 +1,40 @@
 #include "main.h"
 
 /**
- * cents - calculates the minimum number of coins to make change for money
- * @num: amount of money
- * Return: minimum number of coins
- */
-
-int cents(int num)
-{
-	if (num == 0)
-		return (0);
-	if (num >= 25)
-		return (num / 25 + cents(num % 25));
-	if (num >= 10)
-		return (num / 10 + cents(num % 10));
-	if (num >= 5)
-		return (num / 5 + cents(num % 5));
-	if (num >= 2)
-		return (num / 2 + cents(num % 2));
-	if (num == 1)
-		return (num / 1 + cents(num % 1));
-	else
-		return (0);
-}
-
-/**
- * main - prints the minimum number of coins to make change
+ * main - prints the minimum number of coins to make change for an amount of money
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: 0 or 1
+ * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
-	int num;
+	int cents, coins = 0;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	num = atoi(argv[1]);
-	if (num < 0)
+	cents = atoi(argv[1]);
+	if (cents <= 0)
 	{
-		printf("%d\n", 0);
+		printf("0\n");
 		return (0);
 	}
-	printf("%d\n", cents(num));
+	while (cents > 0)
+	{
+		if (cents >= 25)
+			cents -= 25;
+		else if (cents >= 10)
+			cents -= 10;
+		else if (cents >= 5)
+			cents -= 5;
+		else if (cents >= 2)
+			cents -= 2;
+		else if (cents >= 1)
+			cents -= 1;
+		coins++;
+	}
+	printf("%d\n", coins);
 	return (0);
 }
