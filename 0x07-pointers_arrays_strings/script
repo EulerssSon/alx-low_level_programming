@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Enter the commit msg"
+read commit
+echo "Enter the file name "
+read FileName
+git add ${FileName}
+git commit -m "${commit}"
+git push

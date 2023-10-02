@@ -1,43 +1,41 @@
 #include <stdio.h>
-
+#include <math.h>
 /**
  * main - main function
  *
- * Return: 0 on sucess 1 on failure
+ * Return: 0 on ucess 1 on failure
  *
- * Description: print the largest factore of a num
+ * Decription: print the largest factore of a num
  */
 
 int main(void)
 {
-	unsigned long int n = 0;
-	unsigned long int i;
-	unsigned long int j;
-	unsigned long int Larg_Prime_Factor = 0;
-	int TheBoolean;
+	long int n;
+	long int max;
+	long int i;
 
-	for (i = 2; i <= n; i++)
+	n = 612852475143;
+	max = -1;
+
+	while (n % 2 == 0)
 	{
-		if ((n % i) == 0)
-		{
-			TheBoolean = 1;
-
-			for (j = 2; j < i / 2 ; j++)
-			{
-				if (i % j == 0)
-				{
-					TheBoolean = 0;
-					break;
-				}
-			}
-			if (TheBoolean == 1)
-			{
-				Larg_Prime_Factor = i;
-			}
-
-		}
-
+		max = 2;
+		n /= 2;
 	}
-	printf("%lu\n", Larg_Prime_Factor);
+
+	for (i = 3; i <= sqrt(n); i = i + 2)
+	{
+		while (n % i == 0)
+		{
+			max = i;
+			n = n / i;
+		}
+	}
+
+	if (n > 2)
+		max = n;
+
+	printf("%ld\n", max);
+
 	return (0);
 }
