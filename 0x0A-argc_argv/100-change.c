@@ -8,7 +8,7 @@
 
 int cents(int num)
 {
-	if (num == 0)
+	if (num <= 0)
 		return (0);
 	if (num >= 25)
 		return (num / 25 + cents(num % 25));
