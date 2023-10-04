@@ -20,7 +20,6 @@ char **strtow(char *str)
 		if (str[i] != ' ')
 		{
 			start_index[j] = i;
-			i++;
 			while (str[i] != ' ' && str[i] != '\0')
 				i++;
 			end_index[j++] = i;
