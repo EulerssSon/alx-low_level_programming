@@ -22,7 +22,7 @@ char **strtow(char *str)
 			start_index[j] = i;
 			while (str[i] != ' ' && str[i] != '\0')
 				i++;
-			end_index[j++] = i;
+			end_index[j++] = i - 1;
 			words++;
 		}
 	}
