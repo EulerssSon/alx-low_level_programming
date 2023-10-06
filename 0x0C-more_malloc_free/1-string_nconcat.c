@@ -18,6 +18,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	for (S2Len = 0; s2[S2Len] != '\0'; S2Len++)
 		;
+	if (s2 == NULL)
+		s2 = "";
 	StrNCat = malloc(sizeof(char) * (S1len + n + 1));
 	if (StrNCat == NULL || S1len ==  0)
 		return (NULL);
