@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (S2Len = 0; s2[S2Len] != '\0'; S2Len++)
 		;
 	StrNCat = malloc(sizeof(char) * (S1len + n + 1));
-	if (StrNCat == NULL || S1len ==  0)
+	if (StrNCat == NULL)
 		return (NULL);
 	if (n >= S2Len)
 		n = S2Len;
