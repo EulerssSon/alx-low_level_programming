@@ -24,7 +24,6 @@ int op_sub(int a, int b)
 {
 	return (a - b);
 }
-	
 /**
  * op_mul - multiplies two integers
  * @a: first integer
