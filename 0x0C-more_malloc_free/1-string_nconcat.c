@@ -8,28 +8,33 @@
  *
  * Return: pointer to the concatenated string
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int S2Len = 0, S1len = 0, i = 0;
-	char *StrNCat;
+	char *s;
+	unsigned int i, j, len1, len2;
 
-	for (S1len = 0; s1[S1len] != '\0'; S1len++)
-		;
-	for (S2Len = 0; s2[S2Len] != '\0'; S2Len++)
-		;
-	if (s2 == NULL)
-		s2 = "";
-	StrNCat = malloc(sizeof(char) * (S1len + n + 1));
-	if (StrNCat == NULL || S1len ==  0)
+	len1 = 0;
+	len2 = 0;
+	if (s1 != NULL)
+	{
+		for (i = 0; s1[i] != '\0'; i++)
+			len1++;
+	}
+	if (s2 != NULL)
+	{
+		for (i = 0; s2[i] != '\0'; i++)
+			len2++;
+	}
+	if (n >= len2)
+		n = len2;
+	s = malloc(sizeof(char) * (len1 + n + 1));
+	if (s == NULL)
 		return (NULL);
-	if (n >= S2Len)
-		n = S2Len;
-	for (i = 0; i < S1len; i++)
-		StrNCat[i] = s1[i];
-	for (i = 0; i < n; i++)
-		StrNCat[i + S1len] = s2[i];
-	StrNCat[S1len + n] = '\0';
-	return (StrNCat);
+	for (i = 0; i < len1; i++)
+		s[i] = s1[i];
+	for (j = 0; j < n; j++)
+		s[i + j] = s2[j];
+	s[i + j] = '\0';
+	return (s);
 }
 
