@@ -33,14 +33,6 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
-	i = _strlen(b0 - 1;
-	for (; i >= 0; i--)
-	{
-		if (b[i] != '0' && b[i] != '1')
-			return (0);
-		sum += (b[i] - '0') * (1 << j);
-		j++;
-	}
-	return (sum);
-}
+	i = _strlen(b) - 1;
+
 
