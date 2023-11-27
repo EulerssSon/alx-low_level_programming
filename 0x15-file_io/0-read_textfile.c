@@ -23,7 +23,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	readSize = read(fd, buf, letters);
+	if (readSize == (unsigned long int)-1)
+		return (0);
 	readSize = write(STDOUT_FILENO, buf, letters);
+	if (readSize == (unsigned long int)-1)
+		return (0);
 
 	close(fd);
 
