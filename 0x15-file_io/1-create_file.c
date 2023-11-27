@@ -25,7 +25,7 @@ int _str_len(char *str)
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, len = 0;
+	int fd, len = 0, writen;
 
 	if (filename == NULL)
 		return (-1);
@@ -38,8 +38,8 @@ int create_file(const char *filename, char *text_content)
 	if (text_content != NULL)
 	{
 		len = _str_len(text_content);
-		write(fd, text_content, len);
-		if (write < 0)
+		writen = write(fd, text_content, len);
+		if (writen < 0)
 			return (-1);
 	}
 	close(fd);
