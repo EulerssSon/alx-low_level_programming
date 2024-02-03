@@ -65,14 +65,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(temp->key, key) == 0)
 		{
-			if (strcmp(temp->value, value) != 0)
-			{
-				free(temp->value);
-				temp->value = strdup(value);
-				if (temp->value == NULL)
-					return (free_node(&new_node));
-				return (1);
-			}
+			free(temp->value);
+			temp->value = strdup(value);
+			if (temp->value == NULL)
+				return (free_node(&new_node));
+			free_node(&new_node);
+			return (1);
 		}
 		temp = temp->next;
 	}
