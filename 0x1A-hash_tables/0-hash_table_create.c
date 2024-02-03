@@ -9,6 +9,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *table = NULL;
 	hash_node_t **array = NULL;
+	unsigned long int i = 0;
 
 	if (size == 0)
 	{
@@ -28,5 +29,9 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 	table->size = size;
 	table->array = array;
+	for (i = 0; i < size; ++i)
+	{
+		table->array[i] = NULL;
+	}
 	return (table);
 }
