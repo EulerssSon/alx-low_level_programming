@@ -1,9 +1,8 @@
 #include "hash_tables.h"
 
 /**
- * free_set_to_null - free the memory and set the pointer to NULL
- * @ptr: pointer to the pointer
- * Return: 0
+ * hash_table_delete -free the memory and set the pointer to NULL
+ * @ht: pointer to the pointer
  */
 void hash_table_delete(hash_table_t *ht)
 {
